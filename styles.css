@@ -178,7 +178,9 @@ h3 {
 }
 
 .button,
-.contact-links a {
+.contact-links a,
+.detail-trigger,
+.modal-close {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
@@ -188,6 +190,12 @@ h3 {
   border-radius: var(--radius);
   font-weight: 700;
   text-decoration: none;
+}
+
+.detail-trigger,
+.modal-close {
+  cursor: pointer;
+  font: inherit;
 }
 
 .button.primary {
@@ -310,6 +318,33 @@ dd {
   font-weight: 780;
 }
 
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -8px 0 24px;
+}
+
+.category-button {
+  min-height: 38px;
+  padding: 8px 12px;
+  color: var(--accent-strong);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 760;
+  cursor: pointer;
+}
+
+.category-button:hover,
+.category-button.active {
+  color: #fff;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -330,10 +365,24 @@ dd {
   background: #dfe5ec;
 }
 
+.project-card.project-kinematics img {
+  object-fit: contain;
+  background: #f5f7fb;
+}
+
 .project-body {
   display: grid;
   gap: 12px;
   padding: 18px;
+}
+
+.project-category {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--warm);
+  font-size: 12px;
+  font-weight: 820;
+  text-transform: uppercase;
 }
 
 .project-meta {
@@ -355,10 +404,28 @@ dd {
   font-weight: 760;
 }
 
-.project-card a {
+.detail-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
   color: var(--accent-strong);
+  background: #eef8fa;
+  border-color: #c4e9ee;
   font-weight: 780;
   text-decoration: none;
+}
+
+.detail-trigger:hover {
+  color: #fff;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tag-list {
@@ -370,10 +437,41 @@ dd {
   list-style: none;
 }
 
-.award-layout {
+.research-list {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
-  gap: 24px;
+  gap: 14px;
+}
+
+.research-list article {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.research-list p {
+  margin-bottom: 0;
+}
+
+.research-actions,
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.research-actions {
+  margin-top: 2px;
+}
+
+.modal-actions {
+  margin-top: 24px;
+}
+
+.award-layout {
+  display: block;
 }
 
 .award-list {
@@ -382,29 +480,32 @@ dd {
 }
 
 .award-list article {
+  display: grid;
+  gap: 10px;
   padding: 20px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
 
+.award-list article:has(.award-thumb) {
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: start;
+}
+
+.award-thumb {
+  width: 132px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #dfe5ec;
+}
+
 .award-list span {
   color: var(--warm);
   font-size: 13px;
   font-weight: 820;
-}
-
-.award-images {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
-
-.award-images img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-radius: var(--radius);
 }
 
 .contact-section {
@@ -442,10 +543,127 @@ dd {
   color: var(--muted);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 24, 32, 0.66);
+}
+
+.modal-panel {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: min(82vh, 760px);
+  overflow: auto;
+  padding: clamp(24px, 4vw, 36px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 80px rgba(16, 24, 32, 0.28);
+  outline: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: var(--ink);
+  background: #f0f3f7;
+  border-color: var(--line);
+  border-radius: var(--radius);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.modal-kicker {
+  margin-bottom: 10px;
+  color: var(--warm);
+  font-size: 12px;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.modal-panel h2 {
+  margin-right: 36px;
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+.modal-panel p {
+  color: var(--muted);
+}
+
+.modal-list {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+  padding-left: 20px;
+}
+
+.modal-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.modal-image-grid:empty {
+  display: none;
+}
+
+.modal-image-grid figure {
+  margin: 0;
+}
+
+.modal-image-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f5f7fb;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-tags span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 4px 9px;
+  color: var(--accent-strong);
+  background: #e3f6f8;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 760;
+}
+
 @media (max-width: 980px) {
   .hero,
   .split,
-  .award-layout,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -478,6 +696,8 @@ dd {
   }
 
   .hero-actions,
+  .project-actions,
+  .research-actions,
   .contact-links,
   .site-footer,
   .section-head {
@@ -485,13 +705,25 @@ dd {
     flex-direction: column;
   }
 
+  .project-actions .detail-trigger,
+  .research-actions .detail-trigger,
+  .modal-actions .button {
+    width: 100%;
+  }
+
   h1 {
     font-size: 42px;
   }
 
   .stats-grid,
-  .project-grid {
+  .project-grid,
+  .modal-image-grid,
+  .award-list article:has(.award-thumb) {
     grid-template-columns: 1fr;
+  }
+
+  .award-thumb {
+    width: 100%;
   }
 
   .contact-section {
