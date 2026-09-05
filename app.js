@@ -4,7 +4,7 @@ const categories = [
   { id: "web-simulator", label: "Web Simulator" }
 ];
 
-const simulatorUrl = "https://zawhlainghtet.github.io/RobotKinematics/";
+const simulatorUrl = "https://robotkinematics.study/";
 
 const projects = [
   {
