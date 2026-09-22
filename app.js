@@ -26,7 +26,7 @@ const projects = [
     id: "project-delivery-robot",
     title: "Autonomous Food Delivery Robot",
     category: "portfolio-projects",
-    image: "./assets/images/projects/delivery-robot-field-test.jpg",
+    image: "./assets/images/projects/delivery-robot-cover-20260922.jpg",
     summary: "Autonomous service robot work for food and item delivery, covering mechanical prototyping, CAD and simulation, mobile-base integration, manipulator handling, navigation testing, and real environment trials.",
     tags: ["Service robot", "Navigation", "Manipulator", "Field testing"],
     details: [
@@ -36,7 +36,7 @@ const projects = [
       "Validated the robot in lab and real service environments to document practical movement, interaction, and payload handling behavior."
     ],
     images: [
-      { src: "./assets/images/projects/delivery-robot-field-test.jpg", alt: "Food delivery robot field test in a service area" },
+      { src: "./assets/images/projects/delivery-robot-cover-20260922.jpg", alt: "Autonomous food delivery robot platform with sensors, display, and mobile base" },
       { src: "./assets/images/projects/delivery-robot-prototype-platform.jpg", alt: "Early delivery robot prototype with electronics and payload shelves" },
       { src: "./assets/images/projects/delivery-robot-cad-gripper.jpg", alt: "Delivery robot CAD model with tablet display and robotic gripper" },
       { src: "./assets/images/projects/delivery-robot-navigation-sim.jpg", alt: "Delivery robot navigation simulation with path planning view" },
