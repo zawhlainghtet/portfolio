@@ -24,16 +24,24 @@ const projects = [
   },
   {
     id: "project-delivery-robot",
-    title: "Delivery Robot Prototype",
+    title: "Autonomous Food Delivery Robot",
     category: "portfolio-projects",
-    image: "./assets/images/projects/delivery-robot.jpg",
-    summary: "COVID-19 room-service delivery robot prototype built during internship using Keyestudio Uno, 9 MG90s servos, DC gear motors, L298N driver, LM2596 buck module, encoder wandering, and Fusion 360 mechanical design.",
-    tags: ["Keyestudio Uno", "MG90s", "L298N", "Fusion 360"],
+    image: "./assets/images/projects/delivery-robot-field-test.jpg",
+    summary: "Autonomous service robot work for food and item delivery, covering mechanical prototyping, CAD and simulation, mobile-base integration, manipulator handling, navigation testing, and real environment trials.",
+    tags: ["Service robot", "Navigation", "Manipulator", "Field testing"],
     details: [
-      "Built during robotics internship for COVID-19 room-service delivery use cases.",
-      "Implemented with Keyestudio Uno MCU, 9 MG90s servos, 2 DC gear motors, 12V 500RPM drive, 12V LiPo battery, LM2596 buck module, and L298N motor driver.",
-      "Designed the mechanical system in Fusion 360 and developed the control workflow with Arduino IDE.",
-      "Used encoder motor rotation for wandering movement."
+      "Built and tested delivery robot concepts for food, item, and room-service style delivery tasks.",
+      "Worked across prototype hardware, CAD simulation, navigation-path testing, sensor integration, and mobile-base platform setup.",
+      "Integrated a robotic arm and tray-style payload area for pickup, carrying, and handover workflows.",
+      "Validated the robot in lab and real service environments to document practical movement, interaction, and payload handling behavior."
+    ],
+    images: [
+      { src: "./assets/images/projects/delivery-robot-field-test.jpg", alt: "Food delivery robot field test in a service area" },
+      { src: "./assets/images/projects/delivery-robot-prototype-platform.jpg", alt: "Early delivery robot prototype with electronics and payload shelves" },
+      { src: "./assets/images/projects/delivery-robot-cad-gripper.jpg", alt: "Delivery robot CAD model with tablet display and robotic gripper" },
+      { src: "./assets/images/projects/delivery-robot-navigation-sim.jpg", alt: "Delivery robot navigation simulation with path planning view" },
+      { src: "./assets/images/projects/delivery-robot-lab-platform.jpg", alt: "Autonomous delivery robot platform during lab testing" },
+      { src: "./assets/images/projects/delivery-robot-arm-detail.jpg", alt: "Robotic arm and tray mechanism mounted on the delivery robot" }
     ]
   },
   {
