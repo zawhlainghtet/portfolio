@@ -173,7 +173,17 @@ const projects = [
     details: [
       "Mentored robotics projects for Science Fair while working at Hyper Lab and as Computer Science Department representative mentor.",
       "Supported student teams through project planning, robotics implementation, and presentation preparation.",
+      "Mentored projects included Sunflower Automatic-Tracking Solar, Dancing Robot / Tron Luna, and Team New York student robotics builds.",
       "Tron Luna received a Special Award, and Team New York received Second Prize and People's Choice recognition."
+    ],
+    images: [
+      { src: "./assets/images/projects/mentored-solar-tracking-prototype.jpg", alt: "Sunflower automatic tracking solar student robotics prototype display" },
+      { src: "./assets/images/projects/mentored-science-fair-awards.jpg", alt: "AAPS Science Fair awards for mentored student robotics projects" },
+      { src: "./assets/images/projects/mentored-tron-luna-certificate.jpg", alt: "Tron Luna Dancing Robot special award certificate" },
+      { src: "./assets/images/projects/mentored-solar-tracking-presentation.jpg", alt: "Sunflower automatic tracking solar project presentation sheet" },
+      { src: "./assets/images/projects/mentored-solar-tracking-overview.jpg", alt: "Pentrotic 5 DOF Arduino mentoring project overview" },
+      { src: "./assets/images/projects/mentored-team-new-york-firewave.jpg", alt: "Team New York Firewave mentoring project overview" },
+      { src: "./assets/images/projects/mentored-tron-luna-project.jpg", alt: "Tron Luna mentoring project overview" }
     ]
   },
   {
