@@ -1,6 +1,7 @@
 const categories = [
   { id: "all", label: "All" },
   { id: "portfolio-projects", label: "Portfolio Projects" },
+  { id: "freelance", label: "Freelance / Part-time" },
   { id: "web-simulator", label: "Web Simulator" }
 ];
 
@@ -42,6 +43,28 @@ const projects = [
       { src: "./assets/images/projects/delivery-robot-navigation-sim.jpg", alt: "Delivery robot navigation simulation with path planning view" },
       { src: "./assets/images/projects/delivery-robot-lab-platform.jpg", alt: "Autonomous delivery robot platform during lab testing" },
       { src: "./assets/images/projects/delivery-robot-arm-detail.jpg", alt: "Robotic arm and tray mechanism mounted on the delivery robot" }
+    ]
+  },
+  {
+    id: "project-auv-freelance",
+    title: "AUV Power and GNSS Antenna Actuation Design",
+    category: "freelance",
+    image: "./assets/images/projects/auv-gnss-actuation-cover.png",
+    summary: "Freelance part-time engineering design work for a 50 kg autonomous underwater vehicle, covering sonar/thruster power distribution, EMI suppression, and a protected GNSS antenna lift mechanism.",
+    tags: ["AUV", "Power distribution", "EMI suppression", "Mechanical CAD"],
+    details: [
+      "Prepared a power-distribution concept for an AUV sonar and thruster system with separated high-current thruster and low-noise sonar branches.",
+      "Designed a non-contact magnetic ON/OFF control approach using a Hall sensor, ATtiny latch logic, and MOSFET switching for sealed underwater operation.",
+      "Specified protection and filtering concepts including a 40 A fuse, TVS diode, ferrite bead, LC pi filter, and gate pull-down resistor to reduce conducted EMI from ESC switching.",
+      "Created a protected GNSS antenna actuation concept using a waterproof linear actuator, 100 mm lift travel, 6061-T6 aluminum linkage, stainless mounting parts, and serviceable bolted assembly."
+    ],
+    images: [
+      { src: "./assets/images/projects/auv-gnss-actuation-cover.png", alt: "AUV CAD model with raised GNSS antenna actuation mechanism" },
+      { src: "./assets/images/projects/auv-power-distribution-diagram.jpg", alt: "AUV power distribution and EMI suppression block diagram" },
+      { src: "./assets/images/projects/auv-linear-actuator-travel.png", alt: "Waterproof linear actuator travel diagram for 100 mm GNSS lift" },
+      { src: "./assets/images/projects/auv-assembly-front.png", alt: "AUV CAD front view with sonar and GNSS antenna assembly" },
+      { src: "./assets/images/projects/auv-gnss-lift-detail.png", alt: "GNSS lift linkage and protection structure CAD detail" },
+      { src: "./assets/images/projects/auv-gnss-raised-detail.png", alt: "Raised GNSS antenna protection structure and actuator linkage" }
     ]
   },
   {
