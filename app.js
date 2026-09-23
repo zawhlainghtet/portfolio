@@ -146,7 +146,7 @@ const projects = [
     id: "project-industrial-arm",
     title: "Industrial Robotic Arm",
     category: "portfolio-projects",
-    image: "./assets/images/projects/industrial-arm.jpg",
+    image: "./assets/images/projects/industrial-robotic-arm-cad-prototype.jpg",
     summary: "Robotic arm for industry covering system design, Fusion 360 mechanical CAD, reversed servo drawings, MCU and circuits, FK, IK, DH, control system calculation, smooth motion algorithm, and Arduino testing.",
     tags: ["Robot arm", "Control", "Arduino", "FK / IK"],
     details: [
@@ -154,6 +154,10 @@ const projects = [
       "Prepared reversed drawings for servos, MCU layout, and circuit planning.",
       "Calculated forward kinematics, inverse kinematics, DH parameters, and control-system behavior.",
       "Built timestamp-based smooth motion algorithm and tested the process in Arduino IDE."
+    ],
+    images: [
+      { src: "./assets/images/projects/industrial-robotic-arm-cad-prototype.jpg", alt: "Industrial robotic arm CAD and prototype development views" },
+      { src: "./assets/images/projects/industrial-arm.jpg", alt: "Industrial robotic arm prototype with Arduino-based testing setup" }
     ]
   },
   {

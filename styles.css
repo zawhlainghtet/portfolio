@@ -375,6 +375,11 @@ dd {
   background: #f5f7fb;
 }
 
+.project-card.project-industrial-arm img {
+  object-fit: contain;
+  background: #f5f7fb;
+}
+
 .project-body {
   display: grid;
   gap: 12px;
