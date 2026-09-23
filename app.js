@@ -68,6 +68,28 @@ const projects = [
     ]
   },
   {
+    id: "project-matcha-whisking",
+    title: "Automatic Matcha Whisking Mechanism",
+    category: "freelance",
+    image: "./assets/images/projects/matcha-whisking-cover.png",
+    summary: "Freelance part-time mechanism design for a compact automatic matcha whisking module, using coulisse and reciprocating gear concepts to reproduce traditional zigzag hand-whisking motion with one motor.",
+    tags: ["Mechanism design", "Coulisse mechanism", "Gear design", "Product CAD"],
+    details: [
+      "Compared crank-slider, W/M path, and coulisse mechanism approaches for generating the whisking motion required for matcha preparation.",
+      "Selected a coulisse mechanism to convert continuous rotary motor motion into smooth left-right oscillation similar to traditional hand whisking.",
+      "Added a reciprocating gear concept so the whisk can also move slightly forward and backward, improving mixing coverage and foam formation while keeping a single-motor design.",
+      "Designed for a compact 110 x 200 x 200 mm module with a 110 x 60 mm chasen, easy assembly, fastener-based maintenance, rubber or silicone vibration isolation, and flexible RPM stages for mixing, foaming, and finishing."
+    ],
+    images: [
+      { src: "./assets/images/projects/matcha-whisking-cover.png", alt: "Automatic matcha whisking mechanism CAD assembly with motor, gears, and chasen" },
+      { src: "./assets/images/projects/matcha-whisking-top-mechanism.png", alt: "Top view of coulisse and reciprocating gear mechanism for matcha whisking" },
+      { src: "./assets/images/projects/matcha-whisking-gear-detail.png", alt: "Gear detail for the matcha whisking reciprocating mechanism" },
+      { src: "./assets/images/projects/matcha-whisking-chasen-holder.png", alt: "Chasen holder CAD design with protective rubber or silicone interface" },
+      { src: "./assets/images/projects/matcha-whisking-cad-view.png", alt: "Angled CAD view of automatic matcha whisking mechanism" },
+      { src: "./assets/images/projects/matcha-whisking-calculation.jpg", alt: "Hand calculation notes for matcha whisking mechanism geometry and RPM" }
+    ]
+  },
+  {
     id: "project-emergency-device",
     title: "Emergency GPS/GSM Device",
     category: "portfolio-projects",
