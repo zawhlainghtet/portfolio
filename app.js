@@ -93,7 +93,7 @@ const projects = [
     id: "project-automotive-reverse-engineering",
     title: "Automotive Parts Reverse Engineering and CAD Modeling",
     category: "portfolio-projects",
-    image: "./assets/images/projects/automotive-parts-reverse-engineering.jpg",
+    image: "./assets/images/projects/automotive-parts-reverse-cad-20260923.jpg",
     summary: "Portfolio reverse-engineering and CAD modeling project for automotive interior and mechanical parts, converting existing car components into clean 3D models for replacement, repair, and prototyping.",
     tags: ["Portfolio project", "Reverse engineering", "Automotive parts", "3D CAD"],
     details: [
@@ -103,7 +103,7 @@ const projects = [
       "Documented both the original car-part references and the reverse-drawn CAD models to show the full reference-to-model workflow."
     ],
     images: [
-      { src: "./assets/images/projects/automotive-parts-reverse-engineering.jpg", alt: "Automotive parts reverse engineering collage showing car components and recreated CAD models" }
+      { src: "./assets/images/projects/automotive-parts-reverse-cad-20260923.jpg", alt: "Automotive parts reverse CAD collage showing car components and recreated 3D models" }
     ]
   },
   {
