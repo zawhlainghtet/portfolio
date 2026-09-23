@@ -90,6 +90,23 @@ const projects = [
     ]
   },
   {
+    id: "project-automotive-reverse-engineering",
+    title: "Automotive Parts Reverse Engineering and CAD Modeling",
+    category: "freelance",
+    image: "./assets/images/projects/automotive-parts-reverse-engineering.jpg",
+    summary: "Freelance part-time reverse-engineering work for automotive interior and mechanical parts, converting existing car components into clean CAD models for replacement, repair, and 3D-printable fabrication.",
+    tags: ["Reverse engineering", "Automotive parts", "3D CAD", "3D printing"],
+    details: [
+      "Recreated automotive parts from physical references, using measurement and visual inspection to rebuild accurate CAD geometry.",
+      "Modeled dashboard, switch-cover, clamp, bracket, adapter, and gear-style components with attention to mounting features and practical fitment.",
+      "Prepared CAD outputs suitable for prototyping, replacement-part fabrication, and design iteration.",
+      "Documented both the original car-part references and the reverse-drawn CAD models to show the full reference-to-model workflow."
+    ],
+    images: [
+      { src: "./assets/images/projects/automotive-parts-reverse-engineering.jpg", alt: "Automotive parts reverse engineering collage showing car components and recreated CAD models" }
+    ]
+  },
+  {
     id: "project-emergency-device",
     title: "Emergency GPS/GSM Device",
     category: "portfolio-projects",
