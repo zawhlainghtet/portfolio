@@ -146,7 +146,7 @@ const projects = [
     id: "project-industrial-arm",
     title: "Industrial Robotic Arm",
     category: "portfolio-projects",
-    image: "./assets/images/projects/industrial-robotic-arm-cad-prototype.jpg",
+    image: "./assets/images/projects/industrial-arm-blue-prototype.jpg",
     summary: "Robotic arm for industry covering system design, Fusion 360 mechanical CAD, reversed servo drawings, MCU and circuits, FK, IK, DH, control system calculation, smooth motion algorithm, and Arduino testing.",
     tags: ["Robot arm", "Control", "Arduino", "FK / IK"],
     details: [
@@ -156,8 +156,11 @@ const projects = [
       "Built timestamp-based smooth motion algorithm and tested the process in Arduino IDE."
     ],
     images: [
-      { src: "./assets/images/projects/industrial-robotic-arm-cad-prototype.jpg", alt: "Industrial robotic arm CAD and prototype development views" },
-      { src: "./assets/images/projects/industrial-arm.jpg", alt: "Industrial robotic arm prototype with Arduino-based testing setup" }
+      { src: "./assets/images/projects/industrial-arm-cad-gray.jpg", alt: "Industrial robotic arm CAD model with gripper and base design" },
+      { src: "./assets/images/projects/industrial-arm-blue-prototype.jpg", alt: "Blue industrial robotic arm prototype on the workbench" },
+      { src: "./assets/images/projects/industrial-arm-cad-base.jpg", alt: "Industrial robotic arm CAD assembly with base and gripper" },
+      { src: "./assets/images/projects/industrial-arm-software-test.jpg", alt: "Industrial robotic arm prototype testing beside control software" },
+      { src: "./assets/images/projects/industrial-arm-pink-prototype.jpg", alt: "Pink industrial robotic arm prototype during bench testing" }
     ]
   },
   {
