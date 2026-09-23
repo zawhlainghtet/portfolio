@@ -1,6 +1,7 @@
 const categories = [
   { id: "all", label: "All" },
   { id: "portfolio-projects", label: "Portfolio Projects" },
+  { id: "hyper-lab", label: "Hyper Lab" },
   { id: "freelance", label: "Freelance / Part-time" },
   { id: "web-simulator", label: "Web Simulator" }
 ];
@@ -92,7 +93,7 @@ const projects = [
   {
     id: "project-automotive-reverse-engineering",
     title: "Automotive Parts Reverse Engineering and CAD Modeling",
-    category: "portfolio-projects",
+    category: "hyper-lab",
     image: "./assets/images/projects/automotive-parts-reverse-engineering.jpg",
     summary: "Hyper Lab reverse-engineering and CAD modeling work for automotive interior and mechanical parts, converting existing car components into clean 3D models for replacement, repair, and prototyping.",
     tags: ["Hyper Lab", "Reverse engineering", "Automotive parts", "3D CAD"],
